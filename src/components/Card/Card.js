@@ -7,7 +7,9 @@ const Card = ({cardName,id ,handleClick, flipped,  disabled, solved}) => {
         <div className={`flip-container card ${flipped ? 'flipped': ''}`} 
             onClick={()=> disabled ? null: handleClick(id) } >
             <div className="flipper">
-                <img src={flipped || solved ? `/img/${cardName}.png` : `/img/back.png`} 
+                <img src={flipped || solved ? 
+                `https://github.com/JinliangZ/MemoryGame/blob/master/public/img/${cardName}.png` :
+                `https://github.com/JinliangZ/MemoryGame/blob/master/public/img/back.png`} 
                       className={flipped  ? 'front' : 'back'}/>
             
             </div>

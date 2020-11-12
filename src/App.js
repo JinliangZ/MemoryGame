@@ -19,7 +19,7 @@ function App() {
 
   const preloadImg =() =>{
     cards.map(card=>{
-      const src = `/img/${card.cardName}.png`
+      const src = `https://github.com/JinliangZ/MemoryGame/blob/master/public/img/${card.cardName}.png`
       new Image().src = src
     }) 
   }
