@@ -9,6 +9,7 @@ const Board = ({cards, flipped, handleClick}) => {
                     <Card 
                         key={card.id}
                         id={card.id}
+                        cardName={card.cardName}
                         flipped = {flipped.includes(card.id)} 
                         handleClick={()=>handleClick(card.id)}
                     />    
