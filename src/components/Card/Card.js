@@ -2,13 +2,13 @@ import React from 'react';
 import './Card.css';
 
 
-const Card = ({handleClick, id , flipped, cardName}) => {
+const Card = ({cardName,id ,handleClick, flipped,  disabled, solved}) => {
     return ( 
         <div className={`flip-container card ${flipped ? 'flipped': ''}`} 
-            onClick={()=>handleClick(id) } >
+            onClick={()=> disabled ? null: handleClick(id) } >
             <div className="flipper">
-                <img src={flipped ? `/img/${cardName}.png` : `/img/back.png`} 
-                      className={flipped ? 'front' : 'back'}/>
+                <img src={flipped || solved ? `/img/${cardName}.png` : `/img/back.png`} 
+                      className={flipped  ? 'front' : 'back'}/>
             
             </div>
         </div>

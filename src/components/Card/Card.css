@@ -7,16 +7,18 @@ body{
 .board{
 	max-width: 400px;
 	height: 400px;
-	margin:50px auto;
+	margin:30px auto;
 }
 .card{
 		padding-bottom: 20%;
 		width: 20%;
 		height: 0;
 	}
- .flipper img{
+
+.flipper img{
 	padding:5%;
-	width: 90%;
+	width: 60%;
+	margin: 15% 15%;
 }
 .flip-container{
 	perspective: 1000px;
