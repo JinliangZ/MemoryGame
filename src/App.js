@@ -10,8 +10,19 @@ function App() {
   const [disabled, setDisabled] = useState(false)
 
   useEffect(() => {
-      setCards(deck())
+      setCards(deck())    
   }, [])
+
+  useEffect(() => {
+    preloadImg()    
+  }, [cards])
+
+  const preloadImg =() =>{
+    cards.map(card=>{
+      const src = `/img/${card.cardName}.png`
+      new Image().src = src
+    }) 
+  }
 
   const handleClick =(id)=>{
         setDisabled(true);
