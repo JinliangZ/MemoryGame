@@ -7,7 +7,7 @@ const shuffle =(array)=>{
     return _array
 }
 
-const initial = () => {
+const deck = () => {
     let id = 0;
     const cards = ['cherry','cocktail','footprint','pagoda',
     'sedan','star','superman','unicorn'].reduce((acc, card)=>{
@@ -26,4 +26,4 @@ const initial = () => {
     
 }
  
-export default initial;
+export default deck;
