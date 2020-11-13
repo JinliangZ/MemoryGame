@@ -3,6 +3,7 @@ import Board from './components/Board/Board';
 import React, { useState, useEffect} from 'react';
 import deck from './deck';
 
+
 function App() {
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
@@ -19,7 +20,7 @@ function App() {
 
   const preloadImg =() =>{
     cards.map(card=>{
-      const src = `/img/${card.cardName}.png`
+      const src = `./img/${card.cardName}.png`
       new Image().src = src
     }) 
   }

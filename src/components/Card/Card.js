@@ -8,7 +8,7 @@ const Card = ({cardName,id ,handleClick, flipped,  disabled, solved}) => {
             onClick={()=> disabled ? null: handleClick(id) } >
             <div className="flipper">
                 <img src={flipped || solved ? 
-                `/img/${cardName}.png` : `/img/back.png`} 
+                `./img/${cardName}.png` : `./img/back.png`} 
                       className={flipped  ? 'front' : 'back'}/>
             
             </div>
